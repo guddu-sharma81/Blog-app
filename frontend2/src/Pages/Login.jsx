@@ -39,7 +39,7 @@ function Login() {
             navigateTo("/");
         } catch (error) {
             console.log(error);
-            toast.error(error.response.data.meassge || "Please fill the required fileds")
+            toast.error(error.meassge || "Please fill the required fileds")
         }
     };
 
